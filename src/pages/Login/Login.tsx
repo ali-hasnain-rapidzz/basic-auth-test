@@ -11,7 +11,7 @@ function initialFormValues() {
 function Login() {
   const [values, setValues] = useState(initialFormValues)
   const [loginRequestStatus, setLoginRequestStatus] = useState('success')
-  const { signIn } = useSession()
+  const signIn:any  = useSession()
 
   const users = [
     { name: 'Admin', email: 'admin@site.com', password: 'password@123' },
